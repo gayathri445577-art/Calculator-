@@ -1,0 +1,2 @@
+v=5
+print(not(v<=10 or v>=13))
