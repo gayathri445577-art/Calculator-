@@ -1,0 +1,24 @@
+balance = 5000
+
+print("🎮 Welcome to ATM Money Game")
+print("Your starting balance is:", balance)
+
+amount = int(input("Enter amount to withdraw: "))
+
+if amount <= 0:
+    print("Invalid amount")
+
+elif amount > balance:
+    print("Not enough balance 😢 Game Over!")
+
+else:
+    balance -= amount
+    print("Withdrawal Successful 🎉")
+    print("Remaining balance:", balance)
+
+    if balance == 0:
+        print(" You used all your money! Game Over!")
+    elif balance < 500:
+        print("Warning! Low balance!")
+    else:
+        print("👍 You are safe!")
